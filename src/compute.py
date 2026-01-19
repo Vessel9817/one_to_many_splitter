@@ -48,11 +48,10 @@ def as_base(b: int, num: int) -> Dict[int, int]:
         return {0: num}
     out: Dict[int, int] = {}
     i = 0
-    while tmp_num != 1:
+    while tmp_num != 0:
         tmp_num, mod = shims.divmod(tmp_num, b)
         out[i] = int(math.copysign(mod, num))
         i += 1
-    out[i] = int(math.copysign(1, num))
     return out
 
 def as_exponent(n: int | str) -> str:
