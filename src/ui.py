@@ -1,4 +1,4 @@
-from typing import Callable, Iterable, Tuple, List
+from typing import Callable, Iterable, List, Optional, Tuple
 
 from . import compute
 
@@ -20,20 +20,34 @@ def expand_as_base(b: int, exp_scalars: Iterable[Tuple[int, int]]) -> str:
     return '0' if len(out) < 1 else ' + '.join(out).replace('+ -', '- ')
 
 def get_int(
-    quit_key: int,
     condition: Callable[[int], bool],
-    msg: str,
-    err_msg: str
-) -> int:
-    # TODO Document get_int
+    msg: str = '',
+    err_msg: str = '',
+    exit_phrase: Optional[str] = None,
+) -> Optional[int]:
+    '''
+    Prompts the user to input an integer satisfying the given condition.
+
+    :param condition: Description. ValueError is treated as failure.
+    :type condition: Callable[[int], bool]
+    :param msg: The input prompt
+    :type msg: str
+    :param err_msg: The error message when invalid input is received
+    :type err_msg: str
+    :param exit_phrase: The phrase to enter to abort this process
+    :type exit_phrase: Optional[str]
+    :return: Returns None if the exit phrase is entered, otherwise int
+    :rtype: Optional[int]
+    '''
     while True:
         tmp_num = input(msg).lower().strip()
-        if ord(tmp_num[0]) == quit_key:
-            exit()
+        if tmp_num == exit_phrase:
+            return None
         try:
             num = int(tmp_num)
             if condition(num):
                 return num
         except ValueError:
             pass
-        print(err_msg)
+        if err_msg:
+            print(err_msg)
