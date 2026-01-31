@@ -1,6 +1,6 @@
 import pytest
 
-import compute
+from . import compute
 
 def test_as_exponent() -> None:
     assert compute.as_exponent('x-1234567890') == 'x⁻¹²³⁴⁵⁶⁷⁸⁹⁰'

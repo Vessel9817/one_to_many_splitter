@@ -1,6 +1,6 @@
 import math
-import ui
-import compute
+
+from . import compute, ui
 
 if __name__ == '__main__':
     # Getting inputs

@@ -1,8 +1,6 @@
 import math
 from typing import Dict
 
-import shims
-
 _EXP_DIGITS = {
     '0': '\u2070',
     '1': '\xb9',
@@ -49,7 +47,7 @@ def as_base(b: int, num: int) -> Dict[int, int]:
     out: Dict[int, int] = {}
     i = 0
     while tmp_num != 0:
-        tmp_num, mod = shims.divmod(tmp_num, b)
+        tmp_num, mod = divmod(tmp_num, b)
         out[i] = int(math.copysign(mod, num))
         i += 1
     return out

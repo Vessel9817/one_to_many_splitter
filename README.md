@@ -13,15 +13,15 @@
 1. Run the program:
 
     ```py
-    py "./src/main.py"
+    py -m "src.main"
     ```
 
 ## Running tests
 
-1. Optionally, create and activate a virtual environment:
+1. Create and activate a virtual environment:
 
     ```py
-    py -m venv venv
+    py -m venv "./venv"
     "./venv/Scripts/activate"
     ```
 
@@ -34,5 +34,5 @@
 1. Run the test suite:
 
     ```shell
-    pytest
+    pytest --import-mode importlib
     ```

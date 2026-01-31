@@ -1,6 +1,6 @@
 from typing import Callable, Iterable, Tuple, List
 
-import compute
+from . import compute
 
 def expand_as_base(b: int, exp_scalars: Iterable[Tuple[int, int]]) -> str:
     '''

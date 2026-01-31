@@ -1,4 +1,4 @@
-import ui
+from . import ui
 
 def test_expand_as_base() -> None:
     '''Tests `expand_as_base`'''
