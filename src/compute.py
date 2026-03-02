@@ -1,5 +1,4 @@
 import math
-from typing import Dict
 
 _EXP_DIGITS = {
     '0': '\u2070',
@@ -15,7 +14,7 @@ _EXP_DIGITS = {
     '-': '\u207b',
 }
 
-def as_base(b: int, num: int) -> Dict[int, int]:
+def as_base(b: int, num: int) -> dict[int, int]:
     '''
     Outputs a dictionary mapping exponents to scalars,
     which describe `num` as a base `b` number.
@@ -35,7 +34,7 @@ def as_base(b: int, num: int) -> Dict[int, int]:
     :type num: int
     :return: A dictionary of exponent-to-scalar mappings.
     An empty dictionary if `num` is 0.
-    :rtype: Dict[int, int]
+    :rtype: dict[int, int]
     '''
     tmp_num = abs(num)
     if b < 2:
@@ -44,7 +43,7 @@ def as_base(b: int, num: int) -> Dict[int, int]:
         return {}
     elif tmp_num < b:
         return {0: num}
-    out: Dict[int, int] = {}
+    out: dict[int, int] = {}
     i = 0
     while tmp_num != 0:
         tmp_num, mod = divmod(tmp_num, b)
