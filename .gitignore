@@ -1,6 +1,17 @@
+# IDEs
+.vscode
+.vs
+.idea
+
+# Development
+**/tmp
+**/temp
+*.old
+
+# Compilation
 venv
 *.pyc
 .pytest_cache
-**/tmp
-**/temp
 **/__pycache__
+build
+*.egg-info

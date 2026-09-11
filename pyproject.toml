@@ -18,6 +18,7 @@ classifiers = [
 license-files = ["LICEN[CS]E*", "*.license"]
 
 [dependency-groups]
+publish = []
 typing = ["mypy >= 2.3.1"]
 
 [project.urls]
