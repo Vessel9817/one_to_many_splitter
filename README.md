@@ -1,6 +1,7 @@
 # One-to-many splitter
 
 [![MIT license][license-badge]](LICENSE.md)
+[![CI][ci-badge]][ci-workflow]
 
 ## Running
 
@@ -27,3 +28,5 @@
     ```
 
 [license-badge]: https://raw.githubusercontent.com/Vessel9817/one_to_many_splitter/refs/heads/main/badge.svg
+[ci-badge]: https://github.com/Vessel9817/one_to_many_splitter/actions/workflows/ci.yml/badge.svg
+[ci-workflow]: https://github.com/Vessel9817/one_to_many_splitter/actions/workflows/ci.yml
