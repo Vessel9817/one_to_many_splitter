@@ -1,5 +1,7 @@
 # One-to-many splitter
 
+[![MIT license][license-badge]](LICENSE.md)
+
 ## Running
 
 1. Install Python 3 (tested on Python 3.14)
@@ -23,3 +25,5 @@
     ```shell
     py -m unittest discover
     ```
+
+[license-badge]: https://raw.githubusercontent.com/Vessel9817/one_to_many_splitter/refs/heads/main/badge.svg
