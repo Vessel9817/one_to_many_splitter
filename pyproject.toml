@@ -9,7 +9,7 @@ where = ["src"]
 name = "one_to_many_splitter"
 version = "0.0.0"
 readme = "README.md"
-requires-python = ">=3.12,<=3.14"
+requires-python = ">=3.12,<3.15"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.12",
