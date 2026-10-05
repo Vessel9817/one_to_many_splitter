@@ -19,7 +19,7 @@ license-files = ["LICEN[CS]E*", "*.license"]
 
 [dependency-groups]
 publish = []
-typing = ["mypy >= 2.3.1"]
+typing = ["mypy >= 2.4.0"]
 
 [project.urls]
 Homepage = "https://github.com/Vessel9817/one_to_many_splitter"
