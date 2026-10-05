@@ -5,7 +5,7 @@
 
 ## Running
 
-1. Install Python 3 (tested on Python 3.12 through 3.14)
+1. Install Python 3 (any version from Python 3.11 through 3.14)
 1. Clone this repository and enter the project directory:
 
     ```shell
