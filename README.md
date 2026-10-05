@@ -15,8 +15,12 @@
 
 1. Run the program:
 
-    ```py
+    ```shell
+    # Windows
     py -m "src.main"
+
+    # Linux
+    python3 -m "src.main"
     ```
 
 ## Running tests
@@ -24,7 +28,11 @@
 1. Run the test suite:
 
     ```shell
+    # Windows
     py -m unittest discover
+
+    # Linux
+    python3 -m unittest discover
     ```
 
 [license-badge]: https://raw.githubusercontent.com/Vessel9817/one_to_many_splitter/refs/heads/main/badge.svg
